@@ -16,7 +16,6 @@ const camerasSlice = createSlice({
 export const { setCameras, setSingleCamera } = camerasSlice.actions;
 
 const baseUrl = 'https://rest.cameramanager.com/rest/v2.4';
-// const token = localStorage.getItem('access_token');
 
 export const fetchCameras = () => async (dispatch) => {
   await fetch(`${baseUrl}/cameras`)
